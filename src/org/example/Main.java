@@ -5,5 +5,8 @@ public class Main {
         Ibilgailua ibilgailua = new Ibilgailua("SEAT", "LEON", 2000);
 
         ibilgailua.erakutsidatuak();
+
+        ibilgailua.setUrtea(-100);
+        ibilgailua.erakutsidatuak();
     }
 }
