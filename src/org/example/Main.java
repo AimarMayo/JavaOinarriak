@@ -2,13 +2,21 @@ package org.example;
 
 public class Main {
     static void main() {
-        Ibilgailua ibilgailua = new Ibilgailua("SEAT", "LEON", 2000);
+        /*Ibilgailua ibilgailua = new Ibilgailua("SEAT", "LEON", 2000);
         System.out.println(ibilgailua.erakutsidatuak());
 
         Kotxea kotxea = new Kotxea ("SEAT", "LEON", 2001);
         System.out.println(kotxea.erakutsidatuak());
 
         Motorra motorra = new Motorra ("KTM", "125", 2000);
-        System.out.println(motorra.erakutsidatuak());
+        System.out.println(motorra.erakutsidatuak());*/
+
+        Ibilgailua[] ibilgailuak = {
+            new Kotxea ("SEAT", "LEON", 2001),
+            new Motorra ("KTM", "125", 2000)
+        };
+        for (Ibilgailua ibil : ibilgailuak){
+            System.out.println(ibil.erakutsidatuak());
+        }
     }
 }

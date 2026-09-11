@@ -1,6 +1,6 @@
 package org.example;
 
-public class Ibilgailua {
+public abstract class Ibilgailua {
     private String modeloa;
     private String marka;
     private int urtea;
