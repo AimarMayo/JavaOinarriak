@@ -26,8 +26,15 @@ public class Ibilgailua {
             this.urtea = urtea;
         }
     }
+    public String getMarka(){
+        return marka;
+    }
+    public void setMarka(String marka){
+        this.marka = marka;
+    }
 
-    public void erakutsidatuak(){
-        System.out.println("Ibilgailua: " + marka + " " + modeloa + " " + urtea);
+    public String erakutsidatuak(){
+
+        return this.marka + " " + this.modeloa + " " + this.urtea;
     }
 }

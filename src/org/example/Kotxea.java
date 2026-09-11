@@ -4,4 +4,8 @@ public class Kotxea extends Ibilgailua{
     public Kotxea(String marka, String modeloa, int urtea) {
         super(marka, modeloa, urtea);
     }
+    @Override
+    public String erakutsidatuak(){
+        return("Kotxea: " + super.erakutsidatuak());
+    }
 }
