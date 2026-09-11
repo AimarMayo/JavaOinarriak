@@ -37,4 +37,6 @@ public abstract class Ibilgailua {
 
         return this.marka + " " + this.modeloa + " " + this.urtea;
     }
+
+    public abstract void mugitu();
 }

@@ -8,4 +8,8 @@ public class Motorra extends Ibilgailua{
     public String erakutsidatuak(){
         return("Motorra: " + super.erakutsidatuak());
     }
+
+    public void mugitu(){
+        System.out.println("Motoa mugitzen ari da");
+    }
 }
