@@ -1,5 +1,8 @@
 package org.example;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     static void main() {
         /*Ibilgailua ibilgailua = new Ibilgailua("SEAT", "LEON", 2000);
@@ -18,6 +21,18 @@ public class Main {
         for (Ibilgailua ibil : ibilgailuak){
             System.out.println(ibil.erakutsidatuak());
         }
+
+        List<Elektrikoa> elektrikoaList = new ArrayList<>();
+        elektrikoaList.add(new KamioiElektrikoa( "TESLA", "MODEL X", 2020));
+        elektrikoaList.add(new KamioiElektrikoa("TESLA", "MODEL Y", 2021));
+
+        elektrikoaList.get(0).kargatu();
+        elektrikoaList.get(1).kargatu();
+        elektrikoaList.set(0, new KamioiElektrikoa("TESLA", "MODEL ", 2022)).kargatu();
+
+        elektrikoaList.remove(1);
+        System.out.println(elektrikoaList.size());
+
         System.out.println("ibilgailu kopurua: " + Ibilgailua.getKopurua());
     }
 }
