@@ -2,6 +2,7 @@ package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     static void main() {
@@ -34,5 +35,14 @@ public class Main {
         System.out.println(elektrikoaList.size());
 
         System.out.println("ibilgailu kopurua: " + Ibilgailua.getKopurua());
+
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Sartu marka: ");
+        String marka = sc.nextLine();
+        String modeloa = sc.nextLine();
+        int urtea = sc.nextInt();
+
+        Ibilgailua kotxea1 = new Kotxea(marka, modeloa, urtea);
     }
 }
