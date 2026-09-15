@@ -18,5 +18,6 @@ public class Main {
         for (Ibilgailua ibil : ibilgailuak){
             System.out.println(ibil.erakutsidatuak());
         }
+        System.out.println("ibilgailu kopurua: " + Ibilgailua.getKopurua());
     }
 }
